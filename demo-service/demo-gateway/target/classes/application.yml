@@ -1,0 +1,21 @@
+server:
+  port: 8080
+spring:  application:    name: demo-all-gateway
+  cloud:
+    nacos:      discovery:        server-addr: 192.168.125.1:8848    gateway:      discovery:        locator:          enabled: true
+          lower-case-service-id: true      routes:      - id: demo-all-sso-test01
+        uri: lb://demo-all-sso-test01        filters:        - StripPrefix=1 
+        predicates:        - Path=/test1/**
+      - id: demo-all-sso-test02
+        uri: lb://demo-all-sso-test02
+        filters:
+        - StripPrefix=1
+        - name: Retry
+          args:            retries: 3
+            status: 503
+        predicates:
+        - Path=/test2/**
+security:  oauth2:    client:      access-token-uri: http://localhost:9901/oauth2/oauth/token 
+      user-authorization-uri: http://localhost:9901/oauth2/oauth/authorize
+    resource:      user-info-uri: http://localhost:9901/oauth2/user                                        
+      
