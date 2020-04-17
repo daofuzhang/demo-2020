@@ -2,15 +2,13 @@
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <groupId>com.zdf.demo</groupId>
-    <artifactId>demo-2020</artifactId>
+    <artifactId>demo-service</artifactId>
     <version>0.0.1-SNAPSHOT</version>
   </parent>
-  <artifactId>demo-service</artifactId>
+  <artifactId>demo-test</artifactId>
   <packaging>pom</packaging>
   <modules>
-  	<module>demo-gateway</module>
-  	<module>demo-sso</module>
-  	<module>demo-pay</module>
-  	<module>demo-test</module>
+  	<module>demo-sso-client1</module>
+  	<module>demo-sso-client2</module>
   </modules>
 </project>

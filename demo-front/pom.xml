@@ -5,12 +5,6 @@
     <artifactId>demo-2020</artifactId>
     <version>0.0.1-SNAPSHOT</version>
   </parent>
-  <artifactId>demo-service</artifactId>
+  <artifactId>demo-front</artifactId>
   <packaging>pom</packaging>
-  <modules>
-  	<module>demo-gateway</module>
-  	<module>demo-sso</module>
-  	<module>demo-pay</module>
-  	<module>demo-test</module>
-  </modules>
 </project>

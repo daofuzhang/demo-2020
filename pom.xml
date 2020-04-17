@@ -6,5 +6,7 @@
   <packaging>pom</packaging>
   <modules>
   	<module>demo-service</module>
+  	<module>demo-front</module>
+  	<module>demo-core</module>
   </modules>
 </project>
