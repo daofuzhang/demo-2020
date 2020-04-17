@@ -12,5 +12,6 @@
   	<module>demo-sso</module>
   	<module>demo-pay</module>
   	<module>demo-test</module>
+  	<module>demo-speedkill</module>
   </modules>
 </project>

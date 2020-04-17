@@ -7,4 +7,10 @@
   </parent>
   <artifactId>demo-core</artifactId>
   <packaging>pom</packaging>
+  <modules>
+  	<module>demo-mysql-start</module>
+  	<module>demo-mongodb-start</module>
+  	<module>demo-es-start</module>
+  	<module>demo-redis-start</module>
+  </modules>
 </project>
