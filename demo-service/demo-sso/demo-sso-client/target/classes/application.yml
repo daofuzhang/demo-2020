@@ -1,0 +1,9 @@
+server:
+  port: 9902
+spring:
+  application:
+    name: demo-all-sso-client
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.125.1:8848
