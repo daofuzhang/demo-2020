@@ -2,7 +2,7 @@ server:
   port: 9002
 spring:
   application:
-    name: demo-all-sso-test02
+    name: demo-sso-client2
   cloud:
     nacos:
       discovery:

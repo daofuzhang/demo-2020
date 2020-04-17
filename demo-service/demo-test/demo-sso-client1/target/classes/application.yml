@@ -2,8 +2,8 @@ server:
   port: 9001
 spring:
   application:
-    name: demo-all-sso-test01
+    name: demo-sso-client1
   cloud:
     nacos:
       discovery:
-        server-addr: 192.168.125.1:8848
+        server-addr: 127.0.0.1:8848

@@ -1,13 +1,13 @@
 server:
   port: 8080
-spring:  application:    name: demo-all-gateway
+spring:  application:    name: demo-gateway
   cloud:
-    nacos:      discovery:        server-addr: 192.168.125.1:8848    gateway:      discovery:        locator:          enabled: true
-          lower-case-service-id: true      routes:      - id: demo-all-sso-test01
-        uri: lb://demo-all-sso-test01        filters:        - StripPrefix=1 
+    nacos:      discovery:        server-addr: 127.0.0.1:8848    gateway:      discovery:        locator:          enabled: true
+          lower-case-service-id: true      routes:      - id: demo-sso-client1
+        uri: lb://demo-sso-client1        filters:        - StripPrefix=1 
         predicates:        - Path=/test1/**
-      - id: demo-all-sso-test02
-        uri: lb://demo-all-sso-test02
+      - id: demo-sso-client2
+        uri: lb://demo-sso-client2
         filters:
         - StripPrefix=1
         - name: Retry
