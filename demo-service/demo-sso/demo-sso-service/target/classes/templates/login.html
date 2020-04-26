@@ -1,22 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
-<meta charset="UTF-8">
-<title>Sso Login</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>统一认证登录平台</title>
 </head>
-<body>
-   <table>
-     <tr>
-       <td>用户名:</td>
-       <td><input type='text' name='username' value=''></td>
-     </tr>
-     <tr>
-       <td>密码:</td>
-       <td><input type='password' name='password'/></td>
-     </tr>
-     <tr>
-       <td colspan='2'><input name="submit" type="submit" value="Login"/></td>
-     </tr>
-   </table>
+                <form action="/login" method="post">
+                    <div class="form-group">
+                        <label>Username</label>
+                        <input type="text" class="form-control" name="username" placeholder="Username">
+                    </div>
+                    <div class="form-group">
+                        <label>Password</label>
+                        <input type="password" class="form-control" name="password" placeholder="Password">
+                    </div>
+                    <button type="submit"  style="font-size: 18px;">登录</button>
+                </form>
 </body>
 </html>

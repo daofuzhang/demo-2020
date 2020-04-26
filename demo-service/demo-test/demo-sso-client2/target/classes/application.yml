@@ -1,5 +1,9 @@
 server:
   port: 9002
+  servlet:
+    session:
+      cookie:
+        name: OAUTH2SESSION
 spring:
   application:
     name: demo-sso-client2
@@ -7,3 +11,14 @@ spring:
     nacos:
       discovery:
         server-addr: 127.0.0.1:8848
+security:
+  oauth2:
+    client:
+      client-id: client_1
+      client-secret: 123456
+      user-authorization-uri: http://localhost:9901/oauth/authorize
+      access-token-uri: http://localhost:9901/oauth/token
+    resource:
+      #user-info-uri: http://localhost:9901/user
+      jwt:
+        key-uri: http://localhost:9901/oauth/token_key
