@@ -4,7 +4,7 @@ spring:
   #datasource:  #  driver-class-name: com.mysql.jdbc.Driver
   #  url: jdbc:mysql://192.168.125.133:3306/oauth2
    # username: root
-   # password: Welcome1       
+   # password: Welcome1
   application:
     name: demo-sso-server
   cloud:

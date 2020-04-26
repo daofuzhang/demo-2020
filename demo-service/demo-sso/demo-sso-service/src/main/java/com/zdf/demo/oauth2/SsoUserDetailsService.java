@@ -1,10 +1,9 @@
 package com.zdf.demo.oauth2;
 
 
-import java.util.HashSet;
-import java.util.Set;
+import java.util.ArrayList;
+import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -20,9 +19,10 @@ public class SsoUserDetailsService implements UserDetailsService {
     private PasswordEncoder passwordEncoder;
 	
 	public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException { 
-		 Set<GrantedAuthority> userAuthotities = new HashSet<GrantedAuthority>();
-         userAuthotities.add(new SimpleGrantedAuthority("demo-admin"));
-        return new User("admin", passwordEncoder.encode("admin"), userAuthotities);
+		List<SimpleGrantedAuthority> authorityList = new ArrayList<SimpleGrantedAuthority>();
+		 authorityList.add(new SimpleGrantedAuthority("Admin_User"));
+		 User  myUser = new User ("admin", passwordEncoder.encode("123456"), authorityList);
+		return myUser;
 	}
 	
 

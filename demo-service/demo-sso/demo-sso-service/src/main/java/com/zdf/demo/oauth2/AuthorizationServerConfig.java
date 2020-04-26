@@ -43,8 +43,8 @@ public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdap
                 .secret(new BCryptPasswordEncoder().encode("123456"))
                 .authorizedGrantTypes("authorization_code", "refresh_token")//最常用的grant_type组合有: "authorization_code,refresh_token"(针对通过浏览器访问的客户端); "password,refresh_token"(针对移动设备的客户端)
                 .scopes("all")
-                .autoApprove(false)
-                .redirectUris("http://localhost:9001/login");
+                .autoApprove(true)
+                .redirectUris("http://localhost:9002/login");
 	}
 
 	@Override
