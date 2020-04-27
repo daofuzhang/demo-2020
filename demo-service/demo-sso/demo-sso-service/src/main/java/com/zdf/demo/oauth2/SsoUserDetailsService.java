@@ -18,13 +18,12 @@ public class SsoUserDetailsService implements UserDetailsService {
 	@Autowired
     private PasswordEncoder passwordEncoder;
 	
+	@Override
 	public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException { 
 		List<SimpleGrantedAuthority> authorityList = new ArrayList<SimpleGrantedAuthority>();
 		 authorityList.add(new SimpleGrantedAuthority("Admin_User"));
 		 User  myUser = new User ("admin", passwordEncoder.encode("123456"), authorityList);
 		return myUser;
 	}
-	
-
 
 }

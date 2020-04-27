@@ -1,4 +1,4 @@
-package com.zdf.demo.oauth2;
+package com.zdf.demo.web;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
