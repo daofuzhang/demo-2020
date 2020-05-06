@@ -1,0 +1,5 @@
+create table t_score(id number, 
+      userid    varchar2(36),
+      orderid    varchar2(36),
+      scorenum   number      
+ )

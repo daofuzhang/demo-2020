@@ -1,0 +1,1 @@
+create table t_goods(id varchar2(36),name varchar2(255),price number(10,2),num number);

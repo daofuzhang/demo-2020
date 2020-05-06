@@ -8,6 +8,6 @@
   <artifactId>demo-front</artifactId>
   <packaging>pom</packaging>
   <modules>
-  	<module>demo-order</module>
+    <module>demo-taobao</module>
   </modules>
 </project>

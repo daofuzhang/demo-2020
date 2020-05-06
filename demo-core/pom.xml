@@ -12,5 +12,7 @@
   	<module>demo-mongodb-start</module>
   	<module>demo-es-start</module>
   	<module>demo-redis-start</module>
+  	<module>demo-common-core</module>
   </modules>
+ 
 </project>

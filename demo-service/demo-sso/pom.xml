@@ -9,6 +9,5 @@
   <packaging>pom</packaging>
   <modules>
   	<module>demo-sso-service</module>
-  	<module>demo-sso-client</module>
   </modules>
 </project>

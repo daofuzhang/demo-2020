@@ -1,0 +1,14 @@
+server:
+  port: 9102
+  
+spring:
+  application:
+    name: demo-pay
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848   
+#oracle  datasource:    url: jdbc:oracle:thin:@10.0.1.201:1521:cedata
+    username: bpmuser
+    password: bpmuser
+    driver-class-name: oracle.jdbc.driver.OracleDriver        

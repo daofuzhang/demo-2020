@@ -6,7 +6,7 @@
 	<artifactId>demo-2020</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
-	
+
 	<modules>
 		<module>demo-service</module>
 		<module>demo-front</module>
@@ -64,5 +64,13 @@
 
 	</dependencyManagement>
 
-
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
+	
 </project>
