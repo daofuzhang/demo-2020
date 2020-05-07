@@ -10,44 +10,58 @@
   .main{
     margin: 0 auto ;
     width:768px;
-    border:1px solid #F00;
+    height:640px;
+    border:1px solid #ccc;
+    border-radius: 2px;
   }
-  
-  td{
+  .search{
+     width:100%;
+     padding:12 0 8 0;
      text-align:center;
-     width:120px;
-     height:120px;
   }
-  
+  .listbox{
+    margin: 5 5 5 5 ;
+    padding: 5 5 5 5 ;
+    border:1px solid #ccc;
+    border-radius: 5px;
+    width:218px;
+    height:218px;
+    white-space:nowrap;
+  }
+  .goodsbox{
+    float:left;
+    padding: 18px 18px 18px 18px ;
+    margin: 8 8 8 8 ;
+  }
+  input[type=text] {
+	  width: 80%;
+	  box-sizing: border-box;
+	  border: 2px solid #ccc;
+	  border-radius: 4px;
+	  font-size: 16px;
+	  background-color: white;
+	  background-image: url('img/searchicon.png');
+	  background-position: 10px 10px; 
+	  background-repeat: no-repeat;
+	  padding: 12px 20px 12px 40px;
+	  margin-top:28px;
+	  margin-bottom:18px;
+  }
 </style>
 </head>
 <body>
 
    <div class="main">
-   
-    <table>
-       <tr>
-         <td>名称</td>
-         <td>价格</td>
-         <td>数量</td>
-       </tr>
-      
-      <th:forEach items="" var ="" varStatus="" >
-      
-      </th:foreach> 
-       
-      <tr  th:each="good:${goods}" >
-        <td   th:text="${good.name}"></td>
-        <td  th:text="${good.price}"></td>
-        <td  th:text="${good.num}"></td>
-        <th:if test="${good.count%3==0}"> 
-          </tr>
-        </th:if>
-       
-      </table>
-      
-   </div>
-
-     
+	   <input  type="text"/>
+	   <hr />
+	   <div th:each="good,goodStat : ${goods}" class="goodsbox">
+		   <div class="listbox"> 
+		    <div th:text="${good.name}"></div>
+		    <div th:text="${good.price}"></div>
+		    <div th:text="${good.num}"></div>
+          </div>
+	   </div>
+	   
+   </div>   
 </body>
 </html>
