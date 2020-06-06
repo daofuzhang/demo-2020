@@ -13,6 +13,8 @@
   	<module>demo-es-start</module>
   	<module>demo-redis-start</module>
   	<module>demo-common-core</module>
+  	<module>demo-auth-start</module>
+  	<module>demo-enablexxx-start</module>
   </modules>
  
 </project>
