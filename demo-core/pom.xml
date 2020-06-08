@@ -15,6 +15,7 @@
   	<module>demo-common-core</module>
   	<module>demo-auth-start</module>
   	<module>demo-enablexxx-start</module>
+  	<module>demo-log-start</module>
   </modules>
  
 </project>
