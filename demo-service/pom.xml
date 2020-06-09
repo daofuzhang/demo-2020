@@ -15,5 +15,6 @@
   	<module>demo-speedkill</module>
   	<module>demo-score</module>
   	<module>demo-goods</module>
+  	<module>demo-speedkillsys</module>
   </modules>
 </project>

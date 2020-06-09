@@ -9,5 +9,6 @@
   <packaging>pom</packaging>
   <modules>
     <module>demo-taobao</module>
+    <module>demo-vue</module>
   </modules>
 </project>

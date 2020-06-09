@@ -1,0 +1,6 @@
+server:
+  port: 8080  
+spring:  datasource:    username: bpmuser
+    password: bpmuser
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+    url: jdbc:oracle:thin:@10.0.1.201:1521:cedata

@@ -12,5 +12,6 @@
   	<module>demo-sso-client2</module>
   	<module>demo-spring-factory</module>
   	<module>demo-enable-test</module>
+  	<module>demo-hello</module>
   </modules>
 </project>
